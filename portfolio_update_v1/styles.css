@@ -1,16 +1,21 @@
 /* Global Layout Set-up */
-* { 
+* {
   box-sizing: border-box;
 }
-  
+
 body {
   margin: 0;
   padding: 0;
   text-align: center;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Overpass', sans-serif;
   color: #222;
-  background: #f7f5f0;
+  background: #222;
 }
+
+h1, h2 {
+    font-family: 'Montserrat', sans-serif
+}
+
 /* Link Styles */
 
 a {
@@ -25,7 +30,7 @@ a:hover {
 
 .main-nav {
   width: 100%;
-  background: black;
+  background: #1148bb;
   min-height: 30px;
   padding: 10px;
   position: fixed;
@@ -44,38 +49,47 @@ a:hover {
     display: block;
     margin-right: auto;
     color: white;
+    font-size: 2em;
 }
 .nav li {
-  padding: 5px 10px 10px 10px;
+  margin: 10px;
+  padding: 10px;
 }
 .nav a {
   transition: all .5s;
+
 }
 .nav a:hover {
-  color: white
+  color: #1148bb;
+}
+
+.menu_point:hover {
+  background-color: white;
 }
 
 header {
   text-align: center;
-  background: url('images/portland.jpg') no-repeat top center ;
+  background: url('images/yffgke3y4f8-tim-stief.jpg') no-repeat center -20px ;
   background-size: cover;
   overflow: hidden;
-  padding-top: 60px;
+  padding-top: 300px;
 }
 header {
   line-height: 1.5;
 }
 header .profile-image {
-  margin-top: 50px;
+  margin-top: 2%;
   width: 150px;
   height: 150px;
-  border-radius: 50%;
-  border: 3px solid white;
+  border-radius: 10%;
+  box-shadow: 5px 3px 20px #333;
   transition: all .5s;
 }
 header .profile-image:hover {
   transform: scale(1.2) rotate(5deg);
 }
+
+
 .tag {
   background-color: #efefef;
   color: black;
@@ -83,21 +97,27 @@ header .profile-image:hover {
   border-radius: 5px;
   display: table;
   margin: 10px auto;
-} 
+}
 .location {
   background-color: #222;
-  color: yellow;
+  color: white;
 }
 .card {
   margin: 30px;
   padding: 20px 40px 40px;
   max-width: 500px;
   text-align: left;
-  background: #fff;
+  background: #222;
+  color: white;
   border-bottom: 4px solid #ccc;
   border-radius: 6px;
   transition: all .5s;
 }
+
+.card a{
+  color: #5534ff;
+}
+
 .card:hover {
   border-color: #ff99ff;
 }
@@ -110,9 +130,9 @@ ul.skills {
 .skills li {
   border-radius: 6px;
   display: inline-block;
-  background: #ff9904;
+  background: #0355ee;
   color: white;
-  padding: 5px 10px;
+  padding: 10px 10px;
   margin: 2px;
 }
 
@@ -127,6 +147,7 @@ footer {
 }
 
 footer .copyright {
+  color: white;
   top: -8px;
   font-size: .75em;
 }
@@ -142,6 +163,7 @@ footer ul li {
 }
 
 a.social {
+  color: white;
   display: inline-block;
   text-indent: -9999px;
   margin-left: 5px;
@@ -151,15 +173,10 @@ a.social {
   opacity: .4;
   transition: all .5s;
 }
-a.twitter {
-  background-image: url(images/twitter.svg);
+a.Behance {
+  background-image: url(images/behance-logo.svg);
 }
-a.linkedin {
-  background-image: url(images/linkedin.svg);
-}
-a.github {
-  background-image: url(images/github.svg);
-}
+
 a.social:hover {
   opacity: 1;
 }
@@ -169,10 +186,10 @@ a.social:hover {
 
 /* Styles for larger screens */
 @media screen and (min-width: 720px) {
-  
+
   .flex {
       display: -ms-flexbox;      /* TWEENER - IE 10 */
-      display: flex; 
+      display: flex;
       max-width: 1200px;
       -ms-flex-pack: distribute;
       justify-content: space-around;
@@ -204,4 +221,3 @@ a.social:hover {
   }
 
 }
-
